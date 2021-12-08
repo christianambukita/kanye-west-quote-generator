@@ -1,0 +1,70 @@
+
+
+#root{
+    margin:0;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+
+.quoteBox{
+    display: block;
+    color: white;
+    font-size: 30px;
+    background-color: none;
+    border: 3px solid white;
+    margin: auto auto;
+    width:450px;
+    height:auto;
+    padding: 30px 40px 80px 40px;
+    position:relative;
+    text-align: left;
+}
+
+.quoteButton{
+    background-color: white;
+    font-weight: 900;
+    font-size: 14px;
+    position:absolute;
+    display: block;
+    width: auto;
+    height: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    bottom: 25px;
+    right: 25px;
+    margin-left:auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+}
+
+.quoteButton:hover{
+    cursor: pointer;
+}
+
+@media(min-width: 1000px){
+    .quoteBox{
+        width: 550px;
+        height: auto;
+        font-size: 40px;
+        padding: 50px 60px 90px 60px;
+    }
+
+    .quoteButton{
+        font-size: 16px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+}
+
+@media(min-width: 1550px){
+    .quoteBox{
+        width: 700px;
+        height: auto;
+        font-size: 45px;
+        padding: 50px 60px 90px 60px;
+    }
+
+}
