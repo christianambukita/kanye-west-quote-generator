@@ -4,7 +4,7 @@ import './styles/TwitterPost.css'
 
 function TwitterPost(){
 return(
-    <a  id="tweet-quote" >
+    <div  id="tweet-quote" role="button">
         <i className="icon-twitter"></i>
 
         <div id='twitterIconWrapper'>
@@ -14,7 +14,7 @@ return(
         <div id='tweetWrapper'>
             <div id="tweetText">TWEET THIS QUOTE!</div>
         </div>
-    </a>
+    </div>
 )
 }
 
