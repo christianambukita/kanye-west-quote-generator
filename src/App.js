@@ -6,19 +6,19 @@ import TwitterPost from './TwitterPost';
 function App() {
 	const [quote, setQuote] = React.useState('');
 
-	const handleClick = async () => {
+	const getNewQuote = async () => {
 		fetch('https://api.kanye.rest')
 			.then((response) => response.json())
 			.then((newQuote) => setQuote(newQuote.quote));
 	};
 
-	React.useEffect(() => handleClick(), []);
+	React.useEffect(() => getNewQuote(), []);
 
 	return (
 		<div className='quoteBox'>
 			<QuoteDisplay quote={quote} />
-			<TwitterPost />
-			<button className='quoteButton' onClick={handleClick}>
+			<TwitterPost quote={quote} />
+			<button className='quoteButton' onClick={getNewQuote}>
 				ANOTHER ONE
 			</button>
 		</div>
